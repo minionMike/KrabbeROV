@@ -22,7 +22,7 @@ int main(int, char**)
 		cap >> frame; // get a new frame from camera
 		cvtColor(frame, edges, COLOR_BGR2GRAY);
 		GaussianBlur(edges, edges, Size(7, 7), 1.5, 1.5);
-		//Canny(edges, edges, 0, 30, 3);
+		Canny(edges, edges, 0, 30, 3);
 		imshow("edges", edges);
 		if (waitKey(30) >= 0) break;
 	}

@@ -31,9 +31,7 @@ UVCInput::~UVCInput()
 void UVCInput::startCapture(int i) {
 	cam.open(i);
 	while (true) {
-
 			cam >> frame;
-		
 	}
 }
 
