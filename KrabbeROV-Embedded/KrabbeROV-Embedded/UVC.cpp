@@ -32,6 +32,7 @@ void UVCInput::startCapture(int i) {
 	while (true) {
 
 			cam >> frame;
+		
 	}
 }
 
