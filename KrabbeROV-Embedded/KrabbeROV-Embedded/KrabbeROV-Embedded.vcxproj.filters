@@ -18,7 +18,10 @@
     <ClCompile Include="UVC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="TestMainMorten.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPSender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

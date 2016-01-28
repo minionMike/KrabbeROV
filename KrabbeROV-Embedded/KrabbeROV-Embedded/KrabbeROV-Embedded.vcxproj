@@ -120,6 +120,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TestMainMorten.cpp" />
+    <ClCompile Include="UDPSender.cpp" />
     <ClCompile Include="UVC.cpp" />
   </ItemGroup>
   <ItemGroup>
