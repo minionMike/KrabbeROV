@@ -3,26 +3,37 @@
 #include <thread>
 
 
+
 using namespace std;
 using namespace cv;
 
-void cameraCapture() {
-	VideoCapture cap;
-	if (!cap.open(0))
-		cout << "Camera not found";
-	for (;;)
-	{
-		Mat frame;
-		cap >> frame;
-		imshow("this is you, smile! :)", frame);
-		if (waitKey(1) == 27) break; // stop capturing by pressing ESC 
-	}
-}
 
-int main(int argc, char** argv)
-{
+
+class videocapture {
+
+public:
+	Mat frame;
+	VideoCapture cap;
+	void startcapture() {
+		if (!cap.open(0))
+			cout << "Camera not found";
+		for (;;)
+		{
+			cap >> frame;
+			//imshow("this is you, smile! :)", frame);
+			if (waitKey(1) == 27) break; // stop capturing by pressing ESC 
+		}
+	}
 	
-	thread t1(cameraCapture);
-	t1.join();
+};
+
+int main()
+{
+	videocapture capture;
+	thread t();
+	t.join();
 	return 0;
 }
+
+
+
