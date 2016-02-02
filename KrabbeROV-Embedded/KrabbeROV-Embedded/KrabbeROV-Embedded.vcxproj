@@ -119,7 +119,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TestMainChristian.cpp" />
     <ClCompile Include="TestMainMorten.cpp" />
     <ClCompile Include="UVC.cpp" />
     <ClCompile Include="videocap.cpp" />
