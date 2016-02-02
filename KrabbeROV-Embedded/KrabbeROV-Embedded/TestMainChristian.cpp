@@ -14,13 +14,14 @@ class videocapture {
 public:
 	Mat frame;
 	VideoCapture cap;
-	void startcapture() {
+	void operator()()
+	{
 		if (!cap.open(0))
 			cout << "Camera not found";
 		for (;;)
 		{
 			cap >> frame;
-			//imshow("this is you, smile! :)", frame);
+			imshow("this is you, smile! :)", frame);
 			if (waitKey(1) == 27) break; // stop capturing by pressing ESC 
 		}
 	}
@@ -29,9 +30,9 @@ public:
 
 int main()
 {
-	videocapture capture;
-	thread t();
-	t.join();
+	videocapture cap;
+	thread t1(cap);
+	t1.join();
 	return 0;
 }
 
