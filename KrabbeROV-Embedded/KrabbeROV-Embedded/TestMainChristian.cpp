@@ -28,13 +28,13 @@ public:
 
 };
 
-int main()
-{
-	
-	thread t1(cameraCapture);
-	t1.join();
-	return 0;
-}
+//int main()
+//{
+//	
+//	//thread t1(cameraCapture);
+//	//t1.join();
+//	return 0;
+//}
 
 
 
