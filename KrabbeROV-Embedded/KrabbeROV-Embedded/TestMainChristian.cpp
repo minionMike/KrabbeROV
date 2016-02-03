@@ -21,6 +21,7 @@ void cameraCapture() {
 
 int main(int argc, char** argv)
 {
+
 	
 	thread t1(cameraCapture);
 	t1.join();
