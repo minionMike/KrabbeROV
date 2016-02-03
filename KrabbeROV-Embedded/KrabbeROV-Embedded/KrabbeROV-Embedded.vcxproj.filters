@@ -24,6 +24,9 @@
     <ClCompile Include="TestMainChristian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="videocap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UVC.h">
